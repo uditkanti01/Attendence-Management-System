@@ -20,7 +20,7 @@
             
             $num=mysqli_num_rows($records);
 
-            if(!$records){
+            if($num){
                 foreach($_POST['attendance_status'] as $id=>$attendance_status)
                 {
                     $student_name=$_POST['student_name'][$id];
